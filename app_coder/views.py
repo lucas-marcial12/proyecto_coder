@@ -19,4 +19,4 @@ def crea_curso(req, nombre, camada):
 def lista_cursos(req):
     lista = curso.objects.all()
 
-    return render(req, 'lista_curso.html', {'lista_curso': lista})
+    return render(req, 'lista_curso.html', {'lista_cursos': lista})
