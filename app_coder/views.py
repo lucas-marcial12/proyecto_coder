@@ -20,3 +20,24 @@ def lista_cursos(req):
     lista = curso.objects.all()
 
     return render(req, 'lista_curso.html', {'lista_cursos': lista})
+
+def inicio(req):
+
+    return render(req, "inicio.html", {})
+
+def cursos(req):
+
+    return render(req, "cursos.html ", {})
+
+def estudiantes(req):
+
+    return render(req, "estudiantes.html", {})
+
+
+def profesores(req):
+
+    return render(req, "profesores.html", {})
+
+def entregables(req):
+
+    return render(req, "entregables.html", {})
