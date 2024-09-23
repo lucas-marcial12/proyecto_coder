@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+{% extends 'padre.html' %}
+
+{% block contenido_que_cambia %}
+
 <body>
-   Este es nuestro catalogo de cursos: 
+  <h1> Este es nuestro catalogo de cursos:</h1>
    
    <ul>
 
@@ -18,5 +15,5 @@
 
 
    </ul>
-</body>
-</html>
+
+{% endblock contenido_que_cambia %}
