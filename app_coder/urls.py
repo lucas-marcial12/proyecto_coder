@@ -5,10 +5,10 @@ from app_coder.views import crea_curso, lista_cursos, estudiantes, entregables, 
 
 urlpatterns = [
     path('crea_curso/<nombre>/<camada>', crea_curso),
-    path('lista_curso/', lista_cursos),
-    path('profesores/', profesores),
-    path('estudiantes/', estudiantes),
-    path('entregables/', entregables),
+    path('lista_curso/', lista_cursos, name= 'lista_curso'),
+    path('profesores/', profesores, name= 'profesores'),
+    path('estudiantes/', estudiantes, name= 'estudiantes'),
+    path('entregables/', entregables, name= 'entregables'),
     path('inicio/', inicio),
 
 ]
