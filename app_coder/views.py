@@ -41,3 +41,6 @@ def profesores(req):
 def entregables(req):
 
     return render(req, "entregables.html", {})
+
+def curso_formulario(req):
+    return render(req, 'curso_formulario.html', {})

@@ -1,7 +1,7 @@
 
 from django.contrib import admin
 from django.urls import path
-from app_coder.views import crea_curso, lista_cursos, estudiantes, entregables, profesores, inicio  
+from app_coder.views import *  
 
 urlpatterns = [
     path('crea_curso/<nombre>/<camada>', crea_curso),
@@ -10,5 +10,6 @@ urlpatterns = [
     path('estudiantes/', estudiantes, name= 'estudiantes'),
     path('entregables/', entregables, name= 'entregables'),
     path('', inicio),
+    path('curso_formulario', curso_formulario, name= 'curso_formulario'),
 
 ]
